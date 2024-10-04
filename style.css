@@ -1,0 +1,60 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+
+    /* стандартная переменная текста телеги */
+	color: var(--tg-theme-text-color);
+
+    /* стандартный цвет фона телеги */
+	background: var(--tg-theme-bg-color);
+}
+
+
+.container {
+    /* размер контейнера по ширине телефона, чтобы за пределы не уходило */
+	max-width: 390px;
+}
+
+.inner {
+	display: grid;
+    /* 2 равных колонки */
+	grid-template-columns: 1fr 1fr;
+
+    /* 3 равных столбца */
+	grid-template-rows: 200px 200px 200px;  
+}
+
+.img {
+	width: 150px;
+}
+
+.item {
+    /* текст по центру ячейки */
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	background: rgb(248, 168, 24);
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+
+    /* изменение цвета в течение 0.2 сек при наведении на кнопку*/
+	transition: background .2s linear;
+}
+
+.btn:hover {
+    /* при наведении цвет ярко зеленый */
+	background: lightgreen;
+}
+
+/* переменная нужна для передачи инфы с тг на сайт */
+.usercard {
+	text-align: center;
+}
